@@ -29,7 +29,7 @@ namespace AwsLambdaApplicationPlayground.Controllers
             IDynamoDBContext dynamoDbContext,
             ILogger<DynamoDbProxyController> logger)
         {
-            _dynamoDbTableName = configuration[Startup.AppDynamoDbTableKey];
+            _dynamoDbTableName = nameof(Thing);
             if (String.IsNullOrEmpty(_dynamoDbTableName))
             {
                 var message = "Missing configuration for DynamoDB table name";

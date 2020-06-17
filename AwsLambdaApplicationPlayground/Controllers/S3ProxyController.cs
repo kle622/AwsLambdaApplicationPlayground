@@ -70,7 +70,7 @@ namespace AwsLambdaApplicationPlayground.Controllers
                 });
 
                 this.Response.ContentType = getResponse.Headers.ContentType;
-                getResponse.ResponseStream.CopyTo(this.Response.Body);
+                await getResponse.ResponseStream.CopyToAsync(this.Response.Body);
             }
             catch (AmazonS3Exception e)
             {

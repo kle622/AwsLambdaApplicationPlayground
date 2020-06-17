@@ -61,7 +61,7 @@
                                 }
                             ]
                         },
-                        "AppDynamoDbTable": "Everything"
+                        "AppDynamoDbTable": "Thing"
                     }
                 },
                 "Events": {
@@ -102,7 +102,7 @@
         "DynamoDbTable": {
             "Type": "AWS::DynamoDB::Table",
             "Properties": {
-                "TableName": "Everything",
+                "TableName": "Thing",
                 "AttributeDefinitions": [
                     {
                         "AttributeName": "Id",

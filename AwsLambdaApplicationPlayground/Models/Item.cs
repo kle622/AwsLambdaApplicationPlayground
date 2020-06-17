@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AwsLambdaApplicationPlayground.Models
 {
-    [DynamoDBTable("Everything")]
+    [DynamoDBTable("Thing")]
     public class Thing
     {
         [DynamoDBHashKey]

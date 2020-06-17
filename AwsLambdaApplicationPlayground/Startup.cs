@@ -17,7 +17,6 @@ namespace AwsLambdaApplicationPlayground
     public class Startup
     {
         public const string AppS3BucketKey = "AppS3Bucket";
-        public const string AppDynamoDbTableKey = "AppDynamoDbTable";
 
         public Startup(IConfiguration configuration)
         {
